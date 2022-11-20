@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/danaide-challenge/static/css/main.843019bc.css",
+    "main.js": "/danaide-challenge/static/js/main.2053432b.js",
+    "static/js/787.c91a0e96.chunk.js": "/danaide-challenge/static/js/787.c91a0e96.chunk.js",
+    "static/media/logo.png": "/danaide-challenge/static/media/logo.1b22369f7ebdd5f02c17.png",
+    "index.html": "/danaide-challenge/index.html",
+    "main.843019bc.css.map": "/danaide-challenge/static/css/main.843019bc.css.map",
+    "main.2053432b.js.map": "/danaide-challenge/static/js/main.2053432b.js.map",
+    "787.c91a0e96.chunk.js.map": "/danaide-challenge/static/js/787.c91a0e96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.843019bc.css",
+    "static/js/main.2053432b.js"
+  ]
+}
