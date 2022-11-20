@@ -12,7 +12,8 @@ const Header = () => {
         const interval = setInterval(() => {
             fetch("http://dana.dev13.net.ar/test/api/event")
                 .then((response) => response.json())
-                .then((data) => setNotification(data));
+                .then((data) => setNotification(data))
+                .catch((err) => console.error(err));
             console.log("this will run every second");
         }, 1000);
         return () => clearInterval(interval);
@@ -23,7 +24,7 @@ const Header = () => {
             <Navbar bg="light" expand="lg">
                 <Container>
                     <Navbar.Brand href="/">
-                        <img src={logo} alt="logo" id="logo" height="90px" />
+                        <img src={logo} alt="logo" id="logo" height="70px" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

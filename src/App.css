@@ -4,10 +4,8 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 35px;
-  margin-left:30px;
-  margin-bottom: 20px;
-  font-size: 20px;
-
+  margin:auto;
+  font-size: 18px;
 }
 
 .nav-links:hover {
@@ -23,17 +21,17 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(32, 93, 143);
 }
 
 .table-title {
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(32, 93, 143);
 }
 
 .table-body {
-  font-size: 18px;
+  font-size: 15px;
   color: rgb(32, 93, 143);
 }
 .table {
@@ -44,7 +42,7 @@
   margin-left:30px;
   color: rgb(88, 155, 218);
   border-color: rgb(88, 155, 218);
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .nav-button:hover {
@@ -56,6 +54,14 @@
 .buttons {
   color: rgb(88, 155, 218);
   border-color: rgb(88, 155, 218);
+  font-size: 14px;
+}
+
+.video-button {
+  color: rgb(88, 155, 218);
+  border-color: rgb(88, 155, 218);
+  font-size: 14px;
+  margin:0 !important;
 }
 
 .buttons:hover {

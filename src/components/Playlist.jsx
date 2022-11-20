@@ -18,16 +18,19 @@ const Playlist = () => {
     useEffect(() => {
         fetch("http://dana.dev13.net.ar/test/api/playlist")
             .then((response) => response.json())
-            .then((data) => setPlaylist(data));
+            .then((data) => setPlaylist(data))
+            .catch((err) => console.error(err));
     }, []);
 
     const removeChannel = (id) => {
-        fetch(`http://dana.dev13.net.ar/test/api/playlist/remove/${id}`).then(
-            (response) => response.json()
-        );
+        fetch(`http://dana.dev13.net.ar/test/api/playlist/remove/${id}`)
+            .then((response) => response.json())
+            .catch((err) => console.error(err));
+
         fetch("http://dana.dev13.net.ar/test/api/playlist")
             .then((response) => response.json())
-            .then((data) => setPlaylist(data));
+            .then((data) => setPlaylist(data))
+            .catch((err) => console.error(err));
     };
 
     return (
@@ -36,9 +39,15 @@ const Playlist = () => {
             <table className="table table-striped align-middle">
                 <thead>
                     <tr>
-                        <th scope="col" className="table-title">#</th>
-                        <th scope="col" className="table-title">CHANNEL NAME</th>
-                        <th scope="col" className="table-title">ACTIONS</th>
+                        <th scope="col" className="table-title">
+                            #
+                        </th>
+                        <th scope="col" className="table-title">
+                            CHANNEL NAME
+                        </th>
+                        <th scope="col" className="table-title">
+                            ACTIONS
+                        </th>
                     </tr>
                 </thead>
                 <tbody className="table-body">
@@ -47,7 +56,6 @@ const Playlist = () => {
                             <tr key={channel.id}>
                                 <th scope="row">{index + 1}</th>
                                 <td>{channel.name}</td>
-                                {/* <td>{channel.id}</td> */}
                                 <td>
                                     <button
                                         className="btn btn-outline-primary btn-spacing buttons"
@@ -60,7 +68,7 @@ const Playlist = () => {
                                     <Button
                                         key={index}
                                         variant="outline-primary"
-                                        className="btn btn-outline-primary btn-spacing buttons"
+                                        className="btn btn-outline-primary btn-spacing video-button"
                                         onClick={() => handleShow(channel)}
                                     >
                                         Show Video
@@ -73,7 +81,9 @@ const Playlist = () => {
             </table>
             <Modal size="lg" show={show} onHide={() => setShow(false)}>
                 <Modal.Header closeButton>
-                    <Modal.Title className="table-title">{videoName}</Modal.Title>
+                    <Modal.Title className="table-title">
+                        {videoName}
+                    </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Ratio aspectRatio="16x9">
