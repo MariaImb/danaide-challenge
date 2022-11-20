@@ -36,12 +36,12 @@ const Playlist = () => {
             <table className="table table-striped align-middle">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">name</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col" className="table-title">#</th>
+                        <th scope="col" className="table-title">CHANNEL NAME</th>
+                        <th scope="col" className="table-title">ACTIONS</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="table-body">
                     {playlist?.map((channel, index) => {
                         return (
                             <tr key={channel.id}>
@@ -73,7 +73,7 @@ const Playlist = () => {
             </table>
             <Modal size="lg" show={show} onHide={() => setShow(false)}>
                 <Modal.Header closeButton>
-                    <Modal.Title>{videoName}</Modal.Title>
+                    <Modal.Title className="table-title">{videoName}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Ratio aspectRatio="16x9">

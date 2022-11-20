@@ -7,6 +7,7 @@
   margin-left:30px;
   margin-bottom: 20px;
   font-size: 20px;
+
 }
 
 .nav-links:hover {
@@ -22,8 +23,19 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
+  font-size: 30px;
+  color: rgb(32, 93, 143);
 }
 
+.table-title {
+  font-size: 20px;
+  color: rgb(32, 93, 143);
+}
+
+.table-body {
+  font-size: 18px;
+  color: rgb(32, 93, 143);
+}
 .table {
   text-align: center;
 }
@@ -38,6 +50,7 @@
 .nav-button:hover {
   background-color: rgb(32, 93, 143);
   border-color:  rgb(32, 93, 143);
+  color: white;
 }
 
 .buttons {
@@ -48,4 +61,6 @@
 .buttons:hover {
   background-color: rgb(32, 93, 143);
   border-color:  rgb(32, 93, 143);
+ 
 }
+
