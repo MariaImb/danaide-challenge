@@ -1,11 +1,19 @@
 
 
 
-const Modal = (show, hideModal, name, id) => {
+const Modal = ({show, hideModal, name, id}) => {
+    // console.log(name)
+    // return ( <>
+    //     <div>
+    //         <h1>holaaa</h1>
+            
+    //     </div>
+    // </>)
     return (
         <div
         // class="modal fade"
-        class={`modal fade ${show ? ' modal-show' : ''}`}
+        // class={`modal fade ${show ? ' modal-show' : ''}`}
+        class="modal fade"
         // id={id}
         // data-bs-backdrop="static"
         // data-bs-keyboard="false"

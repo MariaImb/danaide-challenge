@@ -30,28 +30,28 @@ const Galeria = () => {
 
     return (
         <div className="container">
-            <h2>Channel List</h2>
+            <h2 className="title">Channel List</h2>
 
-            <table className="table table-striped">
+            <table className="table table-striped align-middle">
                 <thead>
-                    <tr>
+                    <tr class="">
                         <th scope="col">#</th>
-                        <th scope="col">name</th>
-                        <th scope="col">Add to playlist</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">ADD TO PLAYLIST</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody >
                     {channelsList?.map((channel, index) => {
                         return (
-                            <tr key={channel.id}>
-                                <th scope="row">{index}</th>
-                                <td>{channel.name}</td>
-                                <td>{channel.id}</td>
+                            <tr key={channel.id} >
+                                <th scope="row">{index+1}</th>
+                                <td className="align-items-center">{channel.name}</td>
+                                {/* <td>{channel.id}</td> */}
                                 <td>
                                     <button
                                         onClick={() => AddChannel(channel.id)}
-                                        className="btn btn-outline-primary"
-                                
+                                        className="btn btn-outline-primary buttons"
+                                        
                                     >
                                         Add
                                     </button>
