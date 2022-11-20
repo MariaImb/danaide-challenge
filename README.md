@@ -1,8 +1,11 @@
-# Danaide Challenge Project
+# Danaide Challenge
 
 Tecnologías utilizadas:
+
 React - Javascript
+
 Boostrap y ReactBootstrap
+
 Toastify
 
 
